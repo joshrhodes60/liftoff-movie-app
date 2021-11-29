@@ -11,21 +11,39 @@ body {
   margin: 1rem;
 }
 
-.root {
+/* .root {
   display: flex;
   flex-direction: column;
+
+} */
+
+:root{
+  --primary-color:#22254b;
+  --secondary-color:#373b69;
 }
 
 header {
   background-color: #373b69;
+  border-radius: 25px;
   display: flex;
   padding: 1rem;
   justify-content: space-between;
 }
 
 h1 {
-  color: #212555;
+  color: #dadbe9;
 }
+
+.genre {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
 .search {
   background-color: transparent;
   border: 2px solid #22254b;
@@ -110,4 +128,31 @@ h1 {
 
 .tag.red {
   color: red;
+}
+
+#tags{
+  width:80%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.tag{
+  color: white;
+  padding:10px 20px;
+  background-color: orange;
+  border-radius: 50px;
+  margin:5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tag.highlight{
+  background-color: red;
+}
+
+.no-results{
+  color:white;
 }
